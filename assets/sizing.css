@@ -1,0 +1,47 @@
+.scaleble {
+    --max-width: 1300px;
+	--fontsize: 0.80;
+  	font-size: calc(var(--fontsize)*1em);
+  	max-width: var(--max-width);
+  	margin: auto;
+    margin-top: 1em;
+}
+
+@media (max-width: 1250px) {
+	.scaleble {
+		--fontsize: 0.8;
+	}
+}
+
+@media (max-width: 1070px) {
+	.scaleble {
+		--fontsize: 0.7;
+	}
+}
+
+@media (max-width: 950px) {
+	.scaleble {
+		--fontsize: 0.6;
+	}
+}
+
+@media print {
+	.scaleble {
+        zoom: 80%;
+	  	margin: 2em;
+	}
+    .disable_for_print {
+        display: none;
+    }
+    .scaleble .tableheaders {
+         position: relative;
+         top: 0em;
+    }
+    .scaleble .tableheaders-alt {
+         position: relative;
+         top: 0em;
+    }
+    .scaleble .table {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,65 @@
+.side_menu {
+    font-size: 1.2em;
+    transition: 0.4s;
+    padding: 0 1em;
+    padding-top: 0.2em;
+}
+
+.active_menu {
+    border-bottom-right-radius: 1em;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0.5em 0.5em 0.5em;
+}
+
+.side_menu_buttons {
+    display: grid;
+    gap: 0.5em;
+    padding: 1em 0;
+}
+
+.side_menu .side_menu_unstyled_button {
+	border: none;
+	text-decoration: none;
+	color: black;
+	background-color: rgba(0,0,0,0);
+	text-align: left;
+	transition: 0.4s;
+    padding: 0;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+.side_menu .side_menu_unstyled_button:hover {
+	color: red;
+}
+
+.side_menu .side_menu_button {
+    margin: -0.4em;
+    bottom: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+
+.side_menu .side_menu_button_elements {
+    display: grid;
+    grid-auto-rows: 2px;
+    row-gap: 5px;
+    width: 20px;
+}
+
+.side_menu .side_menu_button_element {
+	background-color: black;
+    transition: 0.4s;
+}
+
+.side_menu .side_menu_button:hover .side_menu_button_element {
+	background-color: red;
+}
+
+.side_hidden_module {
+    display: grid;
+    gap: 0.5em;
+    padding-left: 1em;
+}

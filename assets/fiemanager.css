@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('inter/Inter.woff2') format('woff2');
+}
+
+body {
+	font-family: 'Inter';
+	font-weight: 500;
+}
+
+.FileManager .cell {
+    width: 8em;
+    margin-top: auto;
+}
+
+.FileManager .cell .title {
+    width: max-content;
+    overflow: hidden;
+    margin: auto;
+}
+
+.FileManager .folderbutton {
+    width: -webkit-fill-available;
+    border: none;
+    background: transparent;
+}
+
+.FileManager .folderbutton:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.FileManager .folder_up {
+    border: none;
+    background: rgba(190, 190, 241, 0.35);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: flex;
+    margin: 1em;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    width: -webkit-fill-available;
+}
+
+.FileManager .folder_up::placeholder {
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.FileManager .button {
+    border: none;
+    background: rgba(190, 190, 241, 1);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 1em;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    width: max-content;
+    transition: 0.4s;
+}
+
+.FileManager .button:hover {
+    opacity: 0.8;
+}
+
+.FileManager .close_button {
+    color: #fba6a6;
+    transform: rotate(45deg) scale(2.5);
+    font-weight: 200;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.FileManager .close_button:hover {
+    opacity: 0.8;
+}
+
+.FileManager .folder_up .hover {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.FileManager .folder_up:hover .hover {
+    opacity: 1;
+}
