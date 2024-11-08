@@ -154,7 +154,7 @@ def file_uploader():
             multiple=True
         ),
         html.Div(id='output-image-upload'),
-    ], className='FileManager')
+    ], className='FileManager scaleble')
     return layout
 
 
